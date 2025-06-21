@@ -3,16 +3,20 @@ name: Markdown Lint
 on:
   push:
     paths:
-      - '**.md'
+      - '**/*.md'
   pull_request:
     paths:
-      - '**.md'
+      - '**/*.md'
 
 jobs:
   markdown-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: DavidAnson/markdownlint-cli2-action@v15
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run markdownlint with custom config
+        uses: DavidAnson/markdownlint-cli2-action@v20
         with:
+          config: .markdownlint.yaml
           globs: '**/*.md'
