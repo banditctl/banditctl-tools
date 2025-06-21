@@ -1,0 +1,17 @@
+name: Bash Lint
+
+on:
+  push:
+    paths:
+      - '**.sh'
+  pull_request:
+    paths:
+      - '**.sh'
+
+jobs:
+  bash-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint Bash scripts
+        uses: ludeeus/action-shellcheck@v2
