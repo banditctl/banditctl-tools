@@ -1,4 +1,4 @@
-name: Validate Markdown
+name: Markdown Lint
 
 on:
   push:
@@ -20,5 +20,5 @@ jobs:
       - name: Run markdownlint-cli2 with config
         uses: DavidAnson/markdownlint-cli2-action@v20
         with:
-           config: .markdownlint.yaml
-           globs: '**/*.md'
+          config: .markdownlint.yaml
+          globs: '**/*.md'
