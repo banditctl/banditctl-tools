@@ -1,3 +1,4 @@
+---
 name: Validate Markdown
 
 on:
@@ -27,3 +28,7 @@ jobs:
 
       - name: Run markdownlint with config
         run: markdownlint '**/*.md' -c .markdownlint.yml
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 10fc5fd64f0d05d26a48dfba57c0de7b8e81090e
