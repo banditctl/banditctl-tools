@@ -9,6 +9,7 @@ If you discover a security issue, please **do not open a public issue**. Instead
 **📧 security@autotim.de**
 
 Include:
+
 - A detailed description of the vulnerability
 - Steps to reproduce (if applicable)
 - Any relevant logs or screenshots
@@ -18,9 +19,9 @@ We’ll respond as quickly as possible and coordinate a fix.
 ## 🔒 Supported Versions
 
 | Version | Supported |
-|---------|-----------|
-| main    | ✅         |
-| others  | ❌         |
+| ------- | --------- |
+| main    | ✅        |
+| others  | ❌        |
 
 ---
 

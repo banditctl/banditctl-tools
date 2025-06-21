@@ -8,7 +8,6 @@ A collection of shell scripts and tools for automating Proxmox LXC deployment, s
 [![YAML Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/yaml-lint.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/yaml-lint.yml)
 [![Bash Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/bash-lint.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/bash-lint.yml)
 
-
 ---
 
 ## 🚀 What is this?
@@ -19,11 +18,11 @@ A collection of shell scripts and tools for automating Proxmox LXC deployment, s
 
 ## 📦 Features
 
-- 🔧 `create-lxc.sh` — spin up LXCs like a boss  
-- 🧼 Clean, modular scripts  
-- 💬 Friendly commit messages (with AI backup 😎)  
-- 🛡️ Security policy in place  
-- 🧠 Contributor templates for smooth collaboration  
+- 🔧 `create-lxc.sh` — spin up LXCs like a boss
+- 🧼 Clean, modular scripts
+- 💬 Friendly commit messages (with AI backup 😎)
+- 🛡️ Security policy in place
+- 🧠 Contributor templates for smooth collaboration
 
 ---
 
@@ -31,17 +30,17 @@ A collection of shell scripts and tools for automating Proxmox LXC deployment, s
 
 1. **Clone the repo:**
 
-    ```bash
-    git clone git@github.com:banditctl/banditctl-tools.git
-    cd banditctl-tools
-    ```
+   ```bash
+   git clone git@github.com:banditctl/banditctl-tools.git
+   cd banditctl-tools
+   ```
 
 2. **Run a script:**
 
-    ```bash
-    chmod +x create-lxc.sh
-    ./create-lxc.sh
-    ```
+   ```bash
+   chmod +x create-lxc.sh
+   ./create-lxc.sh
+   ```
 
 > ⚠️ Make sure you’re running on a Proxmox host with the right permissions.
 

@@ -22,15 +22,15 @@ Help us recreate the glitch:
 
 ## 🧠 What should’ve happened?
 
-Tell us what you *expected* to see.
+Tell us what you _expected_ to see.
 
 ## 🛠️ Your setup
 
-| Thing             | Version |
-|------------------|---------|
-| OS               | (e.g. Ubuntu 22.04) |
-| Proxmox version  | (e.g. 8.2-1) |
-| Affected script  | (e.g. create-lxc.sh) |
+| Thing           | Version              |
+| --------------- | -------------------- |
+| OS              | (e.g. Ubuntu 22.04)  |
+| Proxmox version | (e.g. 8.2-1)         |
+| Affected script | (e.g. create-lxc.sh) |
 
 ## 🖼️ Logs, screenshots, weird terminal messages?
 

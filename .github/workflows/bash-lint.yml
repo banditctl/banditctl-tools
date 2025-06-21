@@ -3,10 +3,10 @@ name: Bash Lint
 on:
   push:
     paths:
-      - '**.sh'
+      - "**.sh"
   pull_request:
     paths:
-      - '**.sh'
+      - "**.sh"
 
 jobs:
   bash-lint:
