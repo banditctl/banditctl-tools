@@ -36,7 +36,6 @@ Tell us what you *expected* to see.
 
 Paste them here (or drop a screenshot):
 
-
 ## 💬 Anything else?
 
 Weird side effects? Unexpected behavior? Add context here.
@@ -44,4 +43,3 @@ Weird side effects? Unexpected behavior? Add context here.
 ---
 
 🙏 Thanks for reporting this! We’ll get to work (and if you feel like fixing it yourself, we welcome PRs 💪)
-
