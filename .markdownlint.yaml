@@ -1,3 +1,7 @@
-MD025: false  # Allow multiple top-level headings
-MD013: false  # Ignore line-length (helps with badges & links)
-MD036: false  # Let you use bold as pseudo-headings
+MD025: false  # Allow multiple top-level headings (e.g. in issue templates)
+MD013: false  # Ignore line length (for badges, links, etc.)
+MD036: false  # Allow bold text used as headings
+MD034: false  # Allow bare URLs (like email addresses)
+MD012: true   # Keep blank line checks
+MD029:
+  style: ordered  # Fix list numbering style
