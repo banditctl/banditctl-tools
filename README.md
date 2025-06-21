@@ -4,6 +4,10 @@ A collection of shell scripts and tools for automating Proxmox LXC deployment, s
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![Markdown Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/markdown-lint.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/markdown-lint.yml)
+[![YAML Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/yaml-lint.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/yaml-lint.yml)
+[![Bash Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/bash-lint.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/bash-lint.yml)
+
 
 ---
 
