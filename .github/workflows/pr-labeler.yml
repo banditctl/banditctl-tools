@@ -1,4 +1,5 @@
 ---
+# PR Labeler
 name: PR Labeler
 
 on:
