@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Exit immediately on error
+set -e
+
+echo "🧪 Running pre-commit checks..."
+
+### 🐚 ShellCheck: Shell script linting
+echo "🔍 ShellCheck (shell scripts)"
+find . -type f -name "*.sh" -exec shellcheck {} \;
+
+### 🧼 shfmt: Shell formatting
+echo "🧼 shfmt (shell formatting)"
+find . -type f -name "*.sh" -exec shfmt -i 2 -ci -d {} \;
+
+### 📄 markdownlint: Markdown style
+echo "📄 markdownlint"
+if command -v markdownlint > /dev/null; then
+  find . -type f -name "*.md" -exec markdownlint {} +
+else
+  echo "⚠️  markdownlint not found — skipping"
+fi
+
+### 🧾 yamllint: YAML files
+echo "🧾 yamllint"
+if command -v yamllint > /dev/null; then
+  yamllint .
+else
+  echo "⚠️  yamllint not found — skipping"
+fi
+
+echo "✅ All pre-commit checks passed!"

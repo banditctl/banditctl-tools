@@ -11,12 +11,12 @@ DISK=$5
 MEMORY=$6
 PASSWORD=$7
 
-pct create $CTID $TEMPLATE \
-  -hostname $HOSTNAME \
-  -storage $STORAGE \
-  -rootfs ${STORAGE}:${DISK} \
-  -memory $MEMORY \
-  -password $PASSWORD \
+pct create "$CTID" "$TEMPLATE" \
+  -hostname "$HOSTNAME" \
+  -storage "$STORAGE" \
+  -rootfs "${STORAGE}:${DISK}" \
+  -memory "$MEMORY" \
+  -password "$PASSWORD" \
   -net0 name=eth0,bridge=vmbr0,ip=dhcp \
   -start 1
 
