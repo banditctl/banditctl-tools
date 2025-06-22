@@ -1,5 +1,5 @@
 ---
-name: Update CHANGELOG on Tag
+name: 📅 Update CHANGELOG.md on Tag
 
 on:
   push:
@@ -11,55 +11,51 @@ permissions:
   pull-requests: write
 
 jobs:
-  changelog:
-    name: Generate Changelog + PR
+  update-changelog:
+    name: 📓 Update Changelog
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: 🔀 Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Install changelog CLI
-        run: npm install -g conventional-changelog-cli
-
-      - name: Configure Git
+      - name: ⚖️ Set up Git identity
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Generate CHANGELOG.md
+      - name: 📆 Extract Tag Name
+        id: extract_tag
+        run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+      - name: 📓 Generate Changelog
         run: |
-          TAG_NAME="${GITHUB_REF#refs/tags/}"
+          echo -e "\n## $TAG_NAME - $(date +'%Y-%m-%d')\n" >> CHANGELOG.md
+          git log -1 --pretty=format:"- %s (%an)" >> CHANGELOG.md
+
+      - name: 🖜 Filter staged changes (ignore .github/workflows/*)
+        run: |
+          git reset .github/workflows || true
+          git restore --staged .github/workflows || true
+
+      - name: 📖 Commit and push to branch
+        run: |
           BRANCH_NAME="changelog/${TAG_NAME}"
-
           git checkout -b "$BRANCH_NAME"
-          conventional-changelog -p angular -i CHANGELOG.md -s -r 0
-
           git add CHANGELOG.md
           git commit -m "chore: update CHANGELOG for $TAG_NAME"
           git push origin "$BRANCH_NAME"
 
-      - name: Create Pull Request
+      - name: 📄 Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "chore: update CHANGELOG for ${{ github.ref_name }}"
-          branch: changelog/${{ github.ref_name }}
-          base: main
-          title: "📦 Changelog update for ${{ github.ref_name }}"
+          commit-message: "chore: update CHANGELOG for ${{ env.TAG_NAME }}"
+          title: "chore: update CHANGELOG for ${{ env.TAG_NAME }}"
           body: |
-            Auto-generated changelog for tag `${{ github.ref_name }}`
-            ✅ Conventional commits parsed
-            🔒 Main branch protected
-            🧬 Project-Matrix™ DNA compliant
+            This PR updates `CHANGELOG.md` for tag `${{ env.TAG_NAME }}`.
+
+            ✅ Auto-generated from tag push
+            🔒 Auto-merge will trigger if only `CHANGELOG.md` is touched
           labels: automated
           assignees: github-actions[bot]
-          fail-on-no-changes: false
-          delete-branch: true
