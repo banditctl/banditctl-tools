@@ -3,8 +3,7 @@ name: Update CHANGELOG on Release
 
 on:
   release:
-    types: [published]
-
+    types: [published, created, prereleased]
 permissions:
   contents: write
 
