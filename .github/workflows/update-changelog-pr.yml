@@ -55,10 +55,9 @@ jobs:
           base: main
           title: "📦 Changelog update for ${{ github.ref_name }}"
           body: |
-            Auto-generated changelog for tag `${{ github.ref_name }}`.
-
-            ✅ Conventional commits parsed  
-            🔒 Main branch protected  
+            Auto-generated changelog for tag `${{ github.ref_name }}`
+            ✅ Conventional commits parsed
+            🔒 Main branch protected
             🧬 Project-Matrix™ DNA compliant
           labels: |
             changelog
