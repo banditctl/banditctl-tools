@@ -59,9 +59,7 @@ jobs:
             ✅ Conventional commits parsed
             🔒 Main branch protected
             🧬 Project-Matrix™ DNA compliant
-          labels: |
-            changelog
-            automated
+          labels: automated
           assignees: github-actions[bot]
           fail-on-no-changes: false
           delete-branch: true

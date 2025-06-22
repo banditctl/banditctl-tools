@@ -39,7 +39,7 @@ jobs:
 
             const onlyChangelog = files.length === 1 && files[0].filename === 'CHANGELOG.md';
             const hasLabel = labels.includes('automated');
-            const isBot = pr.data.user.login === 'github-actions[bot]';
+            const isBot = ['github-actions[bot]', 'banditctl'].includes(pr.data.user.login);
 
             if (onlyChangelog && hasLabel && isBot) {
               await github.rest.pulls.merge({
