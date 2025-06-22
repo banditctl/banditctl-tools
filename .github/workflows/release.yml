@@ -31,5 +31,6 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
           body: ${{ steps.build_changelog.outputs.changelog }}
+          prerelease: ${{ contains(github.ref, '-alpha') || contains(github.ref, '-beta') }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
