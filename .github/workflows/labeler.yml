@@ -1,5 +1,4 @@
 ---
-# Testing
 name: Label Pull Requests
 on:
   pull_request:
