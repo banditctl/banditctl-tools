@@ -1,4 +1,4 @@
-# 📁 Top-Level Project Maintainer
+# 📁 Top-Level Fallback
 
 - @banditctl
 
@@ -7,16 +7,16 @@
 scripts/_.sh @banditctl
 scripts/\*\*/_.sh @banditctl
 
-# 📦 Package/Installer Scripts
+# 📦 Installer Scripts
 
 install/\*.sh @banditctl
 
-# 📚 Dev & System Setup Docs
+# 📚 Docs (Dev Setup, Future MkDocs)
 
 dev-setup.md @banditctl
 docs/\*_/_.md @banditctl
 
-# ⚙️ GitHub Workflows
+# ⚙️ GitHub Actions
 
 .github/workflows/\* @banditctl
 
@@ -25,11 +25,11 @@ docs/\*_/_.md @banditctl
 .lint\* @banditctl
 .editorconfig @banditctl
 
-# 🧠 VS Code Project Settings
+# 💻 VS Code Settings
 
 .vscode/\* @banditctl
 
-# 📑 README & Project Docs
+# 🧾 Key Project Files
 
 README.md @banditctl
 CHANGELOG.md @banditctl
