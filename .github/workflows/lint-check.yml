@@ -1,0 +1,35 @@
+---
+name: Lint Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y shellcheck yamllint
+          curl -sSLo shfmt https://github.com/mvdan/sh/releases/latest/download/shfmt_$(uname -s)_$(uname -m)
+          chmod +x shfmt && sudo mv shfmt /usr/local/bin/
+          npm install -g markdownlint-cli
+
+      - name: Run full lint check
+        run: bash scripts/check-all.sh

@@ -1,5 +1,7 @@
 # 🛠️ banditctl-tools
 
+[![Lint Check](https://github.com/banditctl/banditctl-tools/actions/workflows/lint-check.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/lint-check.yml)
+
 A collection of shell scripts and tools for automating Proxmox LXC deployment, system tweaks, and DevOps mischief — built by rebels, for rebels.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
