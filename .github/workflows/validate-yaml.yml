@@ -1,3 +1,4 @@
+# Validate YAML files
 name: Validate YAML
 
 on:
