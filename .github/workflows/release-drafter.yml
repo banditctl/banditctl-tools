@@ -4,7 +4,8 @@ name: 📝 Draft Release Notes
 on:
   push:
     tags:
-      - "v*"
+      - "v*.*.*" # When tags like v1.2.3 are pushed
+  workflow_dispatch: # Optional manual run
 
 permissions:
   contents: write
@@ -17,6 +18,5 @@ jobs:
         uses: release-drafter/release-drafter@v6
         with:
           config-name: release-drafter.yml
-          disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
