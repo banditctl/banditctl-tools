@@ -1,0 +1,15 @@
+# Shell scripts
+
+scripts/\*.sh @banditctl
+
+# Dev setup docs
+
+dev-setup.md @banditctl
+
+# GitHub Actions
+
+.github/workflows/ @banditctl
+
+# VS Code settings
+
+.vscode/ @banditctl
