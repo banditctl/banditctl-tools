@@ -1,11 +1,13 @@
 {
-  "template": "## 🚀 $TITLE\n\n$CHANGES\n\n👥 Contributors: $CONTRIBUTORS",
+  "title": "Changes in this release",
+  "template": "## 🚀 $TITLE\n\n$CHANGES\n\n🙌 Thanks to: $CONTRIBUTORS",
   "categories": [
     { "title": "✨ Features", "labels": ["feat", "feature"] },
     { "title": "🐛 Fixes", "labels": ["fix", "bug"] },
     { "title": "🧰 Maintenance", "labels": ["chore", "refactor", "ci"] },
     { "title": "📚 Docs", "labels": ["docs"] },
-    { "title": "🧪 Tests", "labels": ["test"] }
+    { "title": "🧪 Tests", "labels": ["test"] },
+    { "title": "📦 Other Changes", "labels": [] }
   ],
   "excludeLabels": ["skip-changelog"],
   "sort": "mergedAt"
