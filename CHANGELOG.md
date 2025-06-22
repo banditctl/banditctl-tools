@@ -1,5 +1,7 @@
 # Changelog
 
+- Test Log
+
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ## [1.0.0](https://github.com/banditctl/banditctl-tools/releases/tag/v1.0.0-devxp) - (2025-06-22)
