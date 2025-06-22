@@ -43,3 +43,4 @@ jobs:
             This pull request updates `CHANGELOG.md` with the release notes for `${{ github.event.release.tag_name }}`.
             Merged automatically from the GitHub Release workflow 🤖✨
           labels: changelog
+# End Of File
