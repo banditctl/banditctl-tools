@@ -1,0 +1,12 @@
+---
+scripts:
+  - any: ["scripts/*"]
+
+ci:
+  - any: [".github/workflows/*"]
+
+docs:
+  - any: ["README.md", "dev-setup.md"]
+
+editor:
+  - any: [".vscode/*"]
