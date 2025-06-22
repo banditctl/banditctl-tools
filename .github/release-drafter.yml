@@ -1,0 +1,22 @@
+# release-drafter.yml
+---
+name-template: "v$NEXT_PATCH_VERSION"
+tag-template: "v$NEXT_PATCH_VERSION"
+categories:
+  - title: "🚀 Features"
+    labels:
+      - "feat"
+  - title: "🐛 Bug Fixes"
+    labels:
+      - "fix"
+  - title: "🧰 Maintenance"
+    labels:
+      - "chore"
+change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
+no-changes-template: "*No changes to report*"
+template: |
+  ## What’s Changed
+
+  $CHANGES
+
+  **Full Changelog**: https://github.com/${{GITHUB_REPOSITORY}}/compare/$PREVIOUS_TAG...$NEW_TAG
