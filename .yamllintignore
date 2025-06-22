@@ -1,0 +1,11 @@
+# Ignore CI and GitHub meta
+.github/
+
+# Ignore custom scripts and build outputs
+scripts/
+cache/
+
+# Ignore backup and temp
+*.bak
+*.tmp
+*.log

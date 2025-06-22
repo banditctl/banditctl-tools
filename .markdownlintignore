@@ -1,0 +1,15 @@
+# Ignore folders
+
+node_modules/
+.github/
+.snapshots/
+
+# Ignore specific files
+
+LICENSE
+README.md.bak
+
+# Ignore logs or misc
+
+_.log
+_.tmp
