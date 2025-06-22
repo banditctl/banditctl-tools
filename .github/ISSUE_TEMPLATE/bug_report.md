@@ -1,45 +1,48 @@
 ---
-name: 🐞 Bug Report
-about: Something broke? Let’s squash it together 💥
-title: "[Bug]: <short summary of the issue>"
-labels: [bug]
-assignees: []
+name: 🐞 Bug report
+about: Report something broken in the toolset
+title: "[BUG] <brief description>"
+labels: bug
+assignees: Bandit
 ---
 
-# 🐛 Bug Report
+## 📋 Summary
 
-## 💡 What seems off?
+<!-- A clear and concise description of the problem -->
 
-Describe the bug in plain language. What’s not working as expected?
-
-## 🧪 Repro steps (if you’ve got them)
-
-Help us recreate the glitch:
-
-1. Go to ‘…’
-2. Run ‘…’
-3. Observe ‘...’
-
-## 🧠 What should’ve happened?
-
-Tell us what you _expected_ to see.
-
-## 🛠️ Your setup
-
-| Thing           | Version              |
-| --------------- | -------------------- |
-| OS              | (e.g. Ubuntu 22.04)  |
-| Proxmox version | (e.g. 8.2-1)         |
-| Affected script | (e.g. create-lxc.sh) |
-
-## 🖼️ Logs, screenshots, weird terminal messages?
-
-Paste them here (or drop a screenshot):
-
-## 💬 Anything else?
-
-Weird side effects? Unexpected behavior? Add context here.
+**Bug:** _What’s happening?_
 
 ---
 
-🙏 Thanks for reporting this! We’ll get to work (and if you feel like fixing it yourself, we welcome PRs 💪)
+## 🔁 Reproduction Steps
+
+| Step | Description                 |
+| ---- | --------------------------- |
+| 1    | What command/script you ran |
+| 2    | What inputs or environment  |
+| 3    | What you expected           |
+| 4    | What actually happened      |
+
+<details>
+<summary>📸 Screenshots / Logs</summary>
+
+Paste console output or screenshots here.
+
+</details>
+
+---
+
+## 🧱 Environment
+
+| Key         | Value                        |
+| ----------- | ---------------------------- |
+| OS / Host   | _e.g., Proxmox VE 8.4_       |
+| Script      | _e.g., `create-lxc.sh`_      |
+| Shell       | _e.g., bash 5.1_             |
+| Repo Commit | `git rev-parse --short HEAD` |
+
+---
+
+## 💬 Additional Context
+
+Add anything else you think we should know — workaround, thoughts, etc.
