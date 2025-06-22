@@ -31,8 +31,8 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "banditctl"
-          git config --global user.email "banditctl@autotim.de"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Generate CHANGELOG.md
         run: |
@@ -55,13 +55,13 @@ jobs:
           base: main
           title: "📦 Changelog update for ${{ github.ref_name }}"
           body: |
-            This pull request was auto-generated on tag `${{ github.ref_name }}`.
-            It updates the `CHANGELOG.md` file with the latest changes.
-
+            Auto-generated changelog for tag `${{ github.ref_name }}`
             ✅ Conventional commits parsed
-            🔒 Main is protected — no direct pushes
+            🔒 Main branch protected
             🧬 Project-Matrix™ DNA compliant
           labels: |
             changelog
             automated
-          assignees: banditctl
+          assignees: github-actions[bot]
+          fail-on-no-changes: false
+          delete-branch: true
