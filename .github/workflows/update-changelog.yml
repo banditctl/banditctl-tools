@@ -4,7 +4,6 @@ name: Update CHANGELOG on Release
 on:
   release:
     types: [published, created, prereleased]
-
 permissions:
   contents: write
 
