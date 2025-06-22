@@ -34,3 +34,4 @@ jobs:
 
       - name: Run full lint check
         run: bash scripts/check-all.sh
+# Triggering CI workflow
