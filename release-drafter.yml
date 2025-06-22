@@ -1,0 +1,33 @@
+---
+name-template: "v$RESOLVED_VERSION"
+tag-template: "v$RESOLVED_VERSION"
+
+categories:
+  - title: "🚀 Features"
+    labels:
+      - "feature"
+      - "enhancement"
+  - title: "🐛 Fixes"
+    labels:
+      - "bug"
+      - "fix"
+  - title: "🧰 Maintenance"
+    labels:
+      - "chore"
+      - "refactor"
+      - "docs"
+  - title: "🔧 Internal"
+    labels:
+      - "ci"
+      - "infra"
+      - "internal"
+
+change-template: "- $TITLE (#$NUMBER)"
+no-changes-template: "No significant changes in this release."
+
+template: |
+  ## ✨ What's Changed
+
+  $CHANGES
+
+  🧬 Auto-generated from commit history with ❤️ by [release-drafter](https://github.com/release-drafter/release-drafter)
