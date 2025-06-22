@@ -1,6 +1,7 @@
 # 🛠️ banditctl-tools
 
 [![Lint Check](https://github.com/banditctl/banditctl-tools/actions/workflows/lint-check.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/lint-check.yml)
+![Latest Release](https://img.shields.io/github/v/release/banditctl/banditctl-tools?include_prereleases&label=Latest%20Release)
 
 A collection of shell scripts and tools for automating Proxmox LXC deployment, system tweaks, and DevOps mischief — built by rebels, for rebels.
 

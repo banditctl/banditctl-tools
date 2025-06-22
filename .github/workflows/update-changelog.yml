@@ -1,15 +1,15 @@
 ---
-name: Update Changelog
+name: Update CHANGELOG on Release
 
 on:
   release:
-    types: [released]
+    types: [published]
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  sync-changelog:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -17,7 +17,7 @@ jobs:
         with:
           ref: ${{ github.event.release.target_commitish }}
 
-      - name: Update Changelog
+      - name: Update CHANGELOG.md
         uses: stefanzweifel/changelog-updater-action@v1
         with:
           latest-version: ${{ github.event.release.tag_name }}
@@ -26,5 +26,5 @@ jobs:
       - name: Commit updated CHANGELOG
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Update CHANGELOG for ${{ github.event.release.tag_name }}
+          commit_message: "docs(changelog): update CHANGELOG for ${{ github.event.release.tag_name }}"
           file_pattern: CHANGELOG.md
