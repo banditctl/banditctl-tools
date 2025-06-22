@@ -1,0 +1,6 @@
+---
+scripts/*: [scripts]
+.github/workflows/*: [ci]
+.vscode/*: [editor]
+dev-setup.md: [docs]
+README.md: [docs]
