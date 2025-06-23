@@ -1,21 +1,21 @@
 ---
-name: 📝 Draft Release Notes
+name: 📦 Auto Draft Release
 
 on:
   push:
-    tags:
-      - "v*.*.*" # When tags like v1.2.3 are pushed
-  workflow_dispatch: # Optional manual run
+    branches:
+      - main
+  pull_request:
+    types: [closed]
 
 permissions:
   contents: write
 
 jobs:
-  draft-release:
+  update_release_draft:
     runs-on: ubuntu-latest
     steps:
-      - name: Draft GitHub Release
-        uses: release-drafter/release-drafter@v6
+      - uses: release-drafter/release-drafter@v6
         with:
           config-name: release-drafter.yml
         env:
