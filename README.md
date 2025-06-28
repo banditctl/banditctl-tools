@@ -1,16 +1,18 @@
 # 🛠️ banditctl-tools
 
-[![Lint Check](https://github.com/banditctl/banditctl-tools/actions/workflows/lint-check.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/lint-check.yml)
-![Latest Release](https://img.shields.io/github/v/release/banditctl/banditctl-tools?include_prereleases&label=Latest%20Release)
-![Engineered by Bandit – Not Sponsored](https://img.shields.io/badge/Engineered%20by%20Bandit-Not%20Sponsored-ff5500?style=for-the-badge&logo=linux)
-
 A collection of shell scripts and tools for automating Proxmox LXC deployment, system tweaks, and DevOps mischief — built by rebels, for rebels.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](./CONTRIBUTING.md)
-[![Markdown Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-md.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-md.yml)
-[![YAML Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-yaml.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-yaml.yml)
-[![Bash Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-bash.yml/badge.svg)](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-bash.yml)
+<!-- Lint + Workflow Badges -->
+[![Lint Check](https://github.com/banditctl/banditctl-tools/actions/workflows/lint-check.yml/badge.svg?style=flat-square)](https://github.com/banditctl/banditctl-tools/actions/workflows/lint-check.yml)
+[![Markdown Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-md.yml/badge.svg?style=flat-square)](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-md.yml)
+[![YAML Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-yaml.yml/badge.svg?style=flat-square)](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-yaml.yml)
+[![Bash Lint](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-bash.yml/badge.svg?style=flat-square)](https://github.com/banditctl/banditctl-tools/actions/workflows/validate-bash.yml)
+
+<!-- Meta Badges -->
+[![Latest Release](https://img.shields.io/github/v/release/banditctl/banditctl-tools?include_prereleases&label=Latest%20Release&style=flat-square)](https://github.com/banditctl/banditctl-tools/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](./CONTRIBUTING.md)
+![Engineered by Bandit – Not Sponsored](https://img.shields.io/badge/Engineered%20by%20Bandit-Not%20Sponsored-ff5500?style=flat-square&logo=linux)
 
 ---
 
@@ -78,3 +80,9 @@ MIT — see [LICENSE](./LICENSE)
 
 Maintained by [banditctl](https://github.com/banditctl)  
 Built with 💻, ☕, and a touch of ✨
+
+---
+
+> 🔥 Engineered by Bandit – Not Sponsored.  
+> 💡 Built from scratch. Tuned by hand. Owned forever.
+
