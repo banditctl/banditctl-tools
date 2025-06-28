@@ -78,3 +78,8 @@ MIT — see [LICENSE](./LICENSE)
 
 Maintained by [banditctl](https://github.com/banditctl)  
 Built with 💻, ☕, and a touch of ✨
+---
+
+> 🔥 Engineered by Bandit – Not Sponsored.  
+> 💡 Built from scratch. Tuned by hand. Owned forever.
+
